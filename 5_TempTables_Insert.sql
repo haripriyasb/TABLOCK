@@ -82,6 +82,7 @@ ORDER BY COUNT(*) DESC;
 
 --------------------------------------------------------
 -- TAKEAWAY:
--- - INSERT INTO TEMP TABLES WITH TABLOCK HINT ENABLES PARALLELISM,
+--   INSERT INTO TEMP TABLES WITH TABLOCK HINT ENABLES PARALLELISM,
 --   RESULTING IN A FASTER EXECUTION TIME.
+--   APPLIES TO GLOBAL TEMP TABLES TOO
 --------------------------------------------------------
