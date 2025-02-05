@@ -34,7 +34,7 @@ SELECT request_session_id
 	,request_mode
 	,request_status
 FROM sys.dm_tran_locks
-WHERE request_session_id IN (66)
+WHERE request_session_id =@@SPID
 
 
 --Insert data without hint and do not commit
@@ -77,7 +77,7 @@ SELECT request_session_id
 	,request_mode
 	,request_status
 FROM sys.dm_tran_locks
-WHERE request_session_id IN (69)
+WHERE request_session_id =@@SPID
 
 
 ROLLBACK
