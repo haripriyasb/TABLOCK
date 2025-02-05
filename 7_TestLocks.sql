@@ -88,8 +88,8 @@ TAKEAWAY
 
 REGULAR INSERT
 ** Row-level (RID or KEY) or page-level (PAG) locks.
-** Granular locking, allowing other transactions to access different parts of the table.
-** May escalate to table level lock, if lock escalation threshold is reached.
+** Less blocking
+** Lock escalation occurs if threshold is reached
 
 INSERT WITH TABLOCK HINT
 ** Table-level lock (TAB)
